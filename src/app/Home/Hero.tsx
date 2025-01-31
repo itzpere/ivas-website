@@ -41,7 +41,7 @@ const Hero = () => {
             id="image-container"
             className="relative w-full max-w-[400px] aspect-[400/540]"
           >
-            <h2 className="absolute top-[-8%] left-0 w-full flex z-10 pointer-events-none tracking-widest">
+            <h2 className="absolute top-[-9%] left-0 w-full flex z-10 pointer-events-none tracking-widest">
               <span
                 className="font-['Climate_Crisis'] text-[#FBF4DB] tracking-[.05em]"
                 style={{ fontSize: textSize }}
@@ -68,7 +68,7 @@ const Hero = () => {
 
         {/* Right Section */}
         <div className="flex items-center">
-          <div className="w-full max-w-[400px] space-y-2 sm:space-y-6">
+          <div className="w-full max-w-[400px] space-y-2 sm:space-y-6 pt-32">
             <h1
               //FIXME: isprati posledice za 2xl sto sam stavio za mobilni text size
               className={`${kalnia.className} text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-left`}
