@@ -52,7 +52,7 @@ export const useContainerDimensions = (containerId: string): DynamicSizing => {
 const Skills = () => {
   const { fontSize, topOffset } = useContainerDimensions("skills-container");
   return (
-    <div className="relative w-full max-w-[600px] mx-auto lg:mx-0 lg:ml-auto lg:px-12 px-4 sm:px-12 py-24">
+    <div className="relative w-full max-w-[600px] mx-auto lg:mx-0 lg:ml-auto lg:mr-24 lg:px-12 px-4 sm:px-12 py-24">
       <div id="skills-container" className="relative w-full">
       <h2
           className="absolute -top-32 w-full font-['Climate_Crisis'] tracking-[0.09em] text-[#CE9CAC] z-10"
