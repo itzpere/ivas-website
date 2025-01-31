@@ -41,7 +41,7 @@ const Hero = () => {
             id="image-container"
             className="relative w-full max-w-[400px] aspect-[400/540]"
           >
-            <h2 className="absolute top-[-5%] left-0 w-full flex z-10 pointer-events-none tracking-widest">
+            <h2 className="absolute top-[-8%] left-0 w-full flex z-10 pointer-events-none tracking-widest">
               <span
                 className="font-['Climate_Crisis'] text-[#FBF4DB] tracking-[.05em]"
                 style={{ fontSize: textSize }}
