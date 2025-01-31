@@ -6,7 +6,7 @@ import Contact from "./Home/Contact";
 
 export function HomeClient() {
   return (
-    <main className="space-y-16">
+    <main className="space-y-12">
       <Hero />
       <Services />
       <Skills />

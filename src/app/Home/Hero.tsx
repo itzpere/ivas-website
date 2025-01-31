@@ -43,7 +43,7 @@ const Hero = () => {
           >
             <h2 className="absolute top-[-5%] left-0 w-full flex z-10 pointer-events-none tracking-widest">
               <span
-                className="font-['Climate_Crisis'] text-white tracking-[.05em]"
+                className="font-['Climate_Crisis'] text-[#FBF4DB] tracking-[.05em]"
                 style={{ fontSize: textSize }}
               >
                 PORT
@@ -71,7 +71,7 @@ const Hero = () => {
           <div className="w-full max-w-[400px] space-y-2 sm:space-y-6">
             <h1
               //FIXME: isprati posledice za 2xl sto sam stavio za mobilni text size
-              className={`${kalnia.className} text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-left`}
+              className={`${kalnia.className} text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-left`}
             >
               Hi! I'm <br />
               Iva Minić

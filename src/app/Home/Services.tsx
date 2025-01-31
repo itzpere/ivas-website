@@ -17,12 +17,11 @@ const descriptions = [
 const Services: React.FC = () => {
   return (
     <div className="max-w-5xl px-12 mx-auto">
-      <section className="container mx-auto py-4">
+      <section className="container mx-auto ">
         <h1
           className={`
           ${kalnia.className}
-          text-5xl sm:text-7xl font-bold pb-0 sm:pb-12
-          leading-[165.12px] tracking-[0.08em]
+          text-5xl sm:text-7xl font-bold py-12 tracking-[0.08em]
           text-left
           text-[#CE9CAC]
         `}
