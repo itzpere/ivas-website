@@ -1,48 +1,10 @@
 "use client";
 import React from "react";
-import { useState, useEffect } from "react";
+import { useContainerDimensions } from "./hooks";
 
-interface DynamicSizing {
-  fontSize: string;
-  topOffset: string;
-}
-
-export const useContainerDimensions = (containerId: string): DynamicSizing => {
-  const [dimensions, setDimensions] = useState<DynamicSizing>({
-    fontSize: "64px",
-    topOffset: "-4rem",
-  });
-
-  useEffect(() => {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-
-    const updateDimensions = (width: number, height: number) => {
-      const fontSize = width / 11;
-      // Calculate topOffset as percentage of container height
-      const topOffset = fontSize / 1.4 + height * 0.018;
-
-      setDimensions({
-        fontSize: `${fontSize}px`,
-        topOffset: `${topOffset}px`,
-      });
-    };
-
-    const resizeObserver = new ResizeObserver((entries) => {
-      for (const entry of entries) {
-        updateDimensions(entry.contentRect.width, entry.contentRect.height);
-      }
-    });
-
-    resizeObserver.observe(container);
-    return () => resizeObserver.disconnect();
-  }, [containerId]);
-
-  return dimensions;
-};
 export default function Contact() {
   const { fontSize, topOffset } = useContainerDimensions("contact-container");
-
+  
   return (
     <section
       className="relative w-full max-w-2xl md:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
