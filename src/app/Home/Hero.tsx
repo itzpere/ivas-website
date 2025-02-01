@@ -35,7 +35,7 @@ const Hero = () => {
   const textSize = width ? `${width / 4 - 2}px` : "100px";
   return (
     <section className="container mx-auto px-6 py-4">
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-4 sm:gap-8">
         <div className="flex justify-end">
           <div
             id="image-container"
@@ -68,10 +68,9 @@ const Hero = () => {
 
         {/* Right Section */}
         <div className="flex items-center">
-          <div className="w-full max-w-[400px] space-y-2 sm:space-y-6 pt-32">
+          <div className="w-full max-w-[400px] space-y-2 sm:space-y-6 pt-[min(10vw,4rem)]">
             <h1
-              //FIXME: isprati posledice za 2xl sto sam stavio za mobilni text size
-              className={`${kalnia.className} text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-left`}
+              className={`${kalnia.className} text-[min(6vw,3rem)] font-normal text-left`}
             >
               Hi! I'm <br />
               Iva Minić
@@ -81,7 +80,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/iva-mini%C4%87-1705b4303/"
                 className="flex items-center justify-between px-4 py-0.5 bg-[#FC8F54] rounded-[55px] shadow-[3px_3px_7.8px_rgba(170,84,134,0.25)] hover:bg-[#fd9e6d] transition-colors duration-300"
               >
-                <span className="font-['Bricolage_Grotesque'] font-medium text-sm sm:text-lg pr-2 tracking-[0.09em] text-[#FBF4DB]">
+                <span className="font-['Bricolage_Grotesque'] font-medium text-[min(4vw,1.125rem)] sm:text-lg pr-2 tracking-[0.09em] text-[#FBF4DB]">
                   Download
                 </span>
                 <Download className="w-4 h-4 text-[#FBF4DB]" />

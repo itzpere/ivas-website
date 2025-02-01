@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 interface DynamicSizing {
     fontSize: string;
@@ -108,7 +109,7 @@ const Contact = () => {
               have any questions, or just want to chat, feel free to get in touch.
             </p>
 
-            <button className="
+            <Link href="/contact" className="
               w-full py-3 sm:py-4 px-4
               bg-[rgba(251,244,219,0.86)]
               shadow-[4px_8px_4px_rgba(0,0,0,0.25)]
@@ -132,7 +133,7 @@ const Contact = () => {
               ">
                 Send me a Message!
               </span>
-            </button>
+            </Link>
           </div>
         </div>
 

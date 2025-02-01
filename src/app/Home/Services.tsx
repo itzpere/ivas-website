@@ -21,7 +21,7 @@ const Services: React.FC = () => {
         <h1
           className={`
           ${kalnia.className}
-          text-5xl sm:text-7xl font-bold py-12 tracking-[0.08em]
+          text-[min(12vw,5rem)] font-bold py-12 tracking-[0.08em]
           text-left
           text-[#CE9CAC]
         `}
