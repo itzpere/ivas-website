@@ -47,7 +47,7 @@ const Contact = () => {
   const { fontSize, topOffset } = useContainerDimensions("contact-container");
 
   return (
-    <section className="relative w-full max-w-2xl md:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8" id="contact-container">
+    <section className="relative w-full pb-12 max-w-2xl md:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8" id="contact-container">
       <h2
         className="relative [-webkit-text-stroke:0.5px_#FFFFFF] w-full text-center font-['Climate_Crisis'] tracking-[0.09em] text-[#AA5486] z-10 mb-6"
         style={{ fontSize, top: topOffset }}
